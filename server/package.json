@@ -1,10 +1,10 @@
-// server/package.json
 {
   "name": "indiagpt-backend",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "echo \"No tests yet\""
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -13,3 +13,4 @@
     "cors": "^2.8.5"
   }
 }
+
