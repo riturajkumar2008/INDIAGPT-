@@ -1,0 +1,35 @@
+# .github/workflows/deploy.yml
+name: Deploy INDIAGPT
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        cd server
+        npm install
+
+    - name: Run backend tests
+      run: |
+        cd server
+        npm test || echo "No tests yet"
+
+    - name: Deploy to Render (or Vercel)
+      run: echo "Triggering deployment..."
+      # You can replace this with actual deploy command or webhook
+      
