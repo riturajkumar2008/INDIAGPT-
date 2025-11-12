@@ -1,0 +1,12 @@
+// profile.json
+{
+  "name": "Rituraj Kumar",
+  "role": "App and Web Developer",
+  "skills": ["Cybersecurity", "AI Integration", "Real-time Systems"],
+  "vision": "भारत को AI और सुरक्षित तकनीक में अग्रणी बनाना",
+  "contact": {
+    "email": "kumarrituraj2008@gmail.com",
+    "phone": "8521574912",
+    "social": "Mr.hacker_2008"
+  }
+}
